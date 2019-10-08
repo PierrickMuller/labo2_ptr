@@ -19,10 +19,12 @@ On peut voir 6 chiffre après la virgule, soit 10^-6 secondes
 
 #### *Commentez votre code et vos résultats.*
 
-On peut voir qu'on a une meilleure granularité en utilisant
+On peut voir qu'on a une meilleure granularité en utilisant `clock_gettime`.
+@TODO Savoir a quoi sert clock_getres et pourquoi une meilleur granularité avec horloge posix
 
 ## *Développement : timers*
 
 #### *Pouvez-vous expliquer comment il fonctionne ?(Code)*
+@TODO http://www.informit.com/articles/article.aspx?p=23618&seqNum=14
 
 ## *Mesures*

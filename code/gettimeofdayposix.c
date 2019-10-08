@@ -15,10 +15,11 @@ int main(int argc,char **argv){
   int i;
 
   for(i = 0; i < NB_MESURES; ++i) {
-
-    //clock_getres(CLOCK_REALTIME,&tv);
+    //@TODO supprimer getres
+    //@TODO controller retour fonctions
+    clock_getres(CLOCK_REALTIME,&tv);
     clock_gettime(CLOCK_REALTIME,&tv2);
-    //printf("1) %2d : %ld.%06ld\n", i, tv.tv_sec, tv.tv_nsec);
+    printf("1) %2d : %ld.%06ld\n", i, tv.tv_sec, tv.tv_nsec);
     printf("2) %2d : %ld.%06ld\n", i, tv2.tv_sec, tv2.tv_nsec);
   }
   return EXIT_SUCCESS;
