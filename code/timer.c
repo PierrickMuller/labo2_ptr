@@ -21,11 +21,8 @@ void timer_handler (int signum){
 
   clock_gettime(CLOCK_REALTIME,&end);
 
-  unsigned int timePassed = ( end.tv_nsec) -
-  (start.tv_nsec);
-
-
-
+  unsigned int timePassed = (end.tv_sec*1000000000 +  end.tv_nsec) -
+  (start.tv_sec*1000000000 + start.tv_nsec);
   printf("%d\n",timePassed);
 
   if(++countiteration >= iterations){
